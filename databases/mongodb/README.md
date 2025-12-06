@@ -12,9 +12,11 @@ Standalone MongoDB database environment that can be used with any application.
 
 ### Start the Database
 
+Due to the use of an unfree package (`mongodb-ce`), you need to set the `NIXPKGS_ALLOW_UNFREE=1` and `NIXPKGS_ALLOW_UNSUPPORTED_SYSTEM=1` environment variables and use the `--impure` flag to start the environment.
+
 ```bash
 cd databases/mongodb
-devenv shell
+NIXPKGS_ALLOW_UNFREE=1 NIXPKGS_ALLOW_UNSUPPORTED_SYSTEM=1 devenv shell --impure
 ```
 
 MongoDB will start automatically when you enter the shell.

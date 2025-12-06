@@ -59,9 +59,11 @@ Complete DevOps toolchain with cloud providers, Kubernetes, IaC, containers, and
 
 ### Activate Environment
 
+Due to the use of unfree and unsupported packages, you need to set the `NIXPKGS_ALLOW_UNFREE=1` and `NIXPKGS_ALLOW_UNSUPPORTED_SYSTEM=1` environment variables and use the `--impure` flag to start the environment.
+
 ```bash
 cd devops
-devenv shell
+NIXPKGS_ALLOW_UNFREE=1 NIXPKGS_ALLOW_UNSUPPORTED_SYSTEM=1 devenv shell --impure
 ```
 
 The environment comes with helpful aliases:
