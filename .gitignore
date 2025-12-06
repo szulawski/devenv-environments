@@ -12,3 +12,9 @@ result*
 # direnv
 .direnv/
 
+# Local configs
+devops/nix.conf
+
+# Java
+java/.gradle
+
