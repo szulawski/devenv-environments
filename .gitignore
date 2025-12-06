@@ -1,0 +1,14 @@
+# General
+.DS_Store
+
+# devenv
+.devenv/
+devenv.lock
+*.flake.nix
+
+# Nix
+result*
+
+# direnv
+.direnv/
+
