@@ -71,9 +71,9 @@
   #   spring-boot.exec = "mvn spring-boot:run";
   # };
 
-  # https://devenv.sh/pre-commit-hooks/
+  # https://devenv.sh/git-hooks/
   # Hooks for automatic code formatting and checking
-  pre-commit.hooks = {
+  git-hooks.hooks = {
     google-java-format = {
       enable = false;  # set to true for automatic formatting
     };
@@ -81,7 +81,6 @@
 
   # https://devenv.sh/variables/
   env = {
-    JAVA_HOME = "${pkgs.jdk21}";
     GRADLE_USER_HOME = "./.gradle";
     MAVEN_OPTS = "-Xmx2048m -XX:MaxPermSize=512m";
   };

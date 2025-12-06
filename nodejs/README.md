@@ -102,12 +102,12 @@ languages.javascript = {
 };
 ```
 
-## Pre-commit Hooks
+## Git Hooks
 
 You can enable automatic formatting and linting:
 
 ```nix
-pre-commit.hooks = {
+git-hooks.hooks = {
   eslint = {
     enable = true;   # enable ESLint
   };
@@ -137,5 +137,5 @@ You can easily customize the environment:
 - Change Node.js version (e.g., `nodejs_18`, `nodejs_22`)
 - Choose preferred package manager
 - Add more tools to the `packages` section
-- Configure pre-commit hooks
+- Configure git-hooks
 - Add processes that should start automatically

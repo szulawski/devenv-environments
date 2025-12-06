@@ -119,12 +119,12 @@ cd go
 devenv shell
 ```
 
-## Pre-commit Hooks
+## Git Hooks
 
 You can enable automatic formatting and linting:
 
 ```nix
-pre-commit.hooks = {
+git-hooks.hooks = {
   gofmt = {
     enable = true;   # automatic formatting
   };
@@ -194,6 +194,6 @@ tmp_dir = "tmp"
 You can easily customize the environment:
 - Change Go version (e.g., `go_1_21`, `go_1_23`)
 - Add more tools to the `packages` section
-- Configure pre-commit hooks
+- Configure git-hooks
 - Add processes that should start automatically
 - Customize environment variables (CGO, build tags, etc.)

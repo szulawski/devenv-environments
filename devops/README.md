@@ -356,12 +356,12 @@ kubectl get pods --all-namespaces
 
 ## Configuration
 
-### Pre-commit Hooks
+### Git Hooks
 
 Enable automatic validation and linting:
 
 ```nix
-pre-commit.hooks = {
+git-hooks.hooks = {
   terraform-format = {
     enable = true;   # auto-format Terraform
   };

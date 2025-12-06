@@ -72,9 +72,9 @@
   #   dev-server.exec = "npm run dev";
   # };
 
-  # https://devenv.sh/pre-commit-hooks/
+  # https://devenv.sh/git-hooks/
   # Hooks for automatic code formatting and linting
-  pre-commit.hooks = {
+  git-hooks.hooks = {
     eslint = {
       enable = false;  # set to true for automatic linting
     };

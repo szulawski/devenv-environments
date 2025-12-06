@@ -88,5 +88,5 @@ devenv shell
 You can easily customize the environment:
 - Change JDK version (e.g., `jdk17`, `jdk11`)
 - Add more tools to the `packages` section
-- Configure pre-commit hooks for automatic formatting
+- Configure git-hooks for automatic formatting
 - Add processes that should start automatically
