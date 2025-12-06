@@ -120,12 +120,12 @@ poetry = {
 };
 ```
 
-## Pre-commit Hooks
+## Git Hooks
 
 You can enable automatic formatting and linting:
 
 ```nix
-pre-commit.hooks = {
+git-hooks.hooks = {
   black = {
     enable = true;   # auto-formatting
   };
@@ -170,5 +170,5 @@ You can easily customize the environment:
 - Change Python version (e.g., `"3.11"`, `"3.10"`)
 - Choose between pip and Poetry
 - Add more tools to the `packages` section
-- Configure pre-commit hooks
+- Configure git-hooks
 - Add processes that should start automatically
